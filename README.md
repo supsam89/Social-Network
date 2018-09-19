@@ -6,7 +6,7 @@ In order for the files to work I have created a virtual environment with Flask m
 
 ## Create a clean database
 To create a clean database that is linked with the schema.sql file we execute
-'''
+```
 sqlite3 database.db < schema.sql
-'''
+```
 

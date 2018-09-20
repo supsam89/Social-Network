@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>My little network</h1>
+        <p>
+            Please enter your message.
+        </p>
+        <form action='/' method='post'>
+            <input placeholder='Name' name='name' required>
+            <input placeholder='Post Content' name='post' required>
+            <input type='submit' value='Submit' required>
+        </form>
+        {% for post in posts %}
+        <div>{{ post[1] + ': ' + post[2] }}</div>
+        {% endfor %}
+    </body>
+</html>
